@@ -36,7 +36,7 @@ kotlin {
         androidMain {
             dependencies {
                 implementation(libs.androidx.activity.compose)
-                implementation("org.jetbrains.androidx.core:core-bundle:1.1.0-alpha03")
+                implementation("org.jetbrains.androidx.core:core-bundle:1.1.0-SNAPSHOT+pull-1739")
             }
         }
         commonMain {
