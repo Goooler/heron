@@ -18,7 +18,7 @@ androidx-espresso-core = "3.7.0"
 javaDiffUtils = "4.16"
 # TODO: Compose runtime crashes when this is bumped
 # Figure out what changed between versions 2.9.1 and 2.9.2
-lifecycle = "2.9.1"
+lifecycle = "2.9.2"
 androidx-material = "1.12.0"
 androidx-test-junit = "1.3.0"
 coil = "3.3.0"
