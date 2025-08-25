@@ -99,6 +99,7 @@ class EmojiPickerSheetState(
 @Composable
 fun EmojiPickerBottomSheet(
     state: EmojiPickerSheetState,
+    modifier: Modifier = Modifier,
     onEmojiSelected: (message: Message, emoji: String) -> Unit,
 ) {
     // Extract category titles and remember them
@@ -113,6 +114,7 @@ fun EmojiPickerBottomSheet(
     val messageToReactTo = state.messageToReactTo
     if (messageToReactTo != null) {
         ModalBottomSheet(
+            modifier = modifier,
             onDismissRequest = {
                 state.messageToReactTo = null
             },

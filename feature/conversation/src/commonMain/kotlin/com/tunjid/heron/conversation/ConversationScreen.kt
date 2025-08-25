@@ -101,8 +101,8 @@ import kotlinx.datetime.toLocalDateTime
 internal fun ConversationScreen(
     paneScaffoldState: PaneScaffoldState,
     state: State,
-    actions: (Action) -> Unit,
     modifier: Modifier = Modifier,
+    actions: (Action) -> Unit,
 ) {
     val listState = rememberLazyListState()
     val items by rememberUpdatedState(state.tiledItems)

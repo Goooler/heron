@@ -53,8 +53,8 @@ import com.tunjid.treenav.strings.Route
 @OptIn(ExperimentalSharedTransitionApi::class)
 @Composable
 fun App(
-    modifier: Modifier,
     appState: AppState,
+    modifier: Modifier = Modifier,
 ) {
     AppTheme {
         CompositionLocalProvider(

@@ -43,6 +43,11 @@ allprojects {
             )
             targetExclude("**/build/**")
             ktlint(rootProject.libs.ktlint.get().version)
+                .customRuleSets(
+                    listOf(
+                        rootProject.libs.composeRules.get().toString(),
+                    ),
+                )
         }
     }
 

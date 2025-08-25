@@ -68,8 +68,8 @@ import org.jetbrains.compose.resources.stringResource
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun PaneScaffoldState.UserInput(
-    sendMessage: (AnnotatedString) -> Unit,
     modifier: Modifier = Modifier,
+    sendMessage: (AnnotatedString) -> Unit,
 ) {
     var textState by rememberSaveable(stateSaver = TextFieldValue.Saver) {
         mutableStateOf(TextFieldValue())

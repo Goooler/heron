@@ -35,8 +35,8 @@ import org.jetbrains.compose.resources.stringResource
 
 @Composable
 fun PaneScaffoldState.TopAppBarFab(
-    modifier: Modifier,
     state: State,
+    modifier: Modifier = Modifier,
     onCreatePost: (Action.CreatePost) -> Unit,
 ) {
     ComposePostFab(

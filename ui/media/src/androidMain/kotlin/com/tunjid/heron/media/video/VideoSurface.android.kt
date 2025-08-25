@@ -42,7 +42,7 @@ import kotlinx.coroutines.flow.filterNotNull
 
 @Composable
 internal fun VideoSurface(
-    modifier: Modifier,
+    modifier: Modifier = Modifier,
     exoPlayer: ExoPlayer?,
     contentScale: ContentScale,
     alignment: Alignment,

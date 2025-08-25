@@ -77,9 +77,9 @@ import kotlinx.datetime.Clock
 
 @Composable
 internal fun ComposeScreen(
+    state: State,
     paneScaffoldState: PaneScaffoldState,
     modifier: Modifier = Modifier,
-    state: State,
     actions: (Action) -> Unit,
 ) {
     val scrollState = rememberScrollState()

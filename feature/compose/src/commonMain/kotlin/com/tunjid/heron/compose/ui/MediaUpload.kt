@@ -52,9 +52,9 @@ import com.tunjid.heron.ui.shapes.toRoundedPolygonShape
 @OptIn(ExperimentalSharedTransitionApi::class)
 @Composable
 internal fun MediaUploadItems(
-    modifier: Modifier = Modifier,
     photos: List<MediaItem.Photo>,
     video: MediaItem.Video?,
+    modifier: Modifier = Modifier,
     removeMediaItem: (MediaItem) -> Unit,
     onMediaItemUpdated: (MediaItem) -> Unit,
 ) = LookaheadScope {

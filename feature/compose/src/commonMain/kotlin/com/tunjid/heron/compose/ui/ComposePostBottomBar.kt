@@ -56,8 +56,8 @@ import kotlin.math.min
 @Composable
 internal fun ComposePostBottomBar(
     postText: TextFieldValue,
-    modifier: Modifier = Modifier,
     photos: List<MediaItem.Photo>,
+    modifier: Modifier = Modifier,
     onMediaEdited: (Action.EditMedia) -> Unit,
 ) {
     Row(

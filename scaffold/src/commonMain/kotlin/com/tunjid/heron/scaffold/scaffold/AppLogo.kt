@@ -36,7 +36,7 @@ import com.tunjid.treenav.compose.MovableElementSharedTransitionScope
 @OptIn(ExperimentalSharedTransitionApi::class)
 @Composable
 fun MovableElementSharedTransitionScope.AppLogo(
-    modifier: Modifier,
+    modifier: Modifier = Modifier,
 ) {
     Icon(
         modifier = modifier
